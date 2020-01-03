@@ -2,12 +2,12 @@ import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
 //import StyleSheet from './components/styleSheet';
-import LinearParent from './components/linear_parent';
+import Search from './components/Search';
 
 function App() {
   return (
     <div className="App">
-      <LinearParent/>
+      <Search/>
     </div>
   );
 }

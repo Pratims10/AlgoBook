@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Linear from './linear';
 import './myStyle.css';
 
-const arr=['3','5','4','1','6','7','54','6','32'];
-        const n=arr.length;
+    const arr=['3','5','4','1','6','7','54','6','32','8765','99'];
+    const n=arr.length;
 class LinearParent extends Component {
     constructor(props) {
         super(props);
@@ -13,7 +13,6 @@ class LinearParent extends Component {
              flag:false,
              search:''
         }
-        this.check=this.check.bind(this);
     }
     check=()=>{
         this.setState({

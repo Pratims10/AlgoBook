@@ -1,45 +1,36 @@
 import React, { Component } from 'react'
-import "./myStyle.css";
+import './myStyle.css';
 
 class Binary extends Component {
-    constructor(props) {
-        super(props)
-    
-        this.state = {
-            index:0,
-            ar:[3,5,6,8,9,10]
-        }
-    }
-    linearSearch(){
-        const srch=8;
-        for(let i=0;i<5;i++){
-            this.setState(prevState=>({
-                index:prevState.index+1
-            }),function(){
-/*                for(let qq=0;qq<=1000000000;qq++)
-                qq++;
-                console.log(i);*/
-                this.render();
-            }
-            );
-        }
-    }
-
     render() {
-        console.log("a"+this.state.index+"e");
-        const ui=this.state.ar.map((x,index)=>
-        {
-            if(this.state.index===index)
-            return(<div key={index} className="red">{x}</div>);
+        let mid=Math.floor((this.props.l+this.props.r)/2);
+//        console.log(`${this.props.l} ${this.props.r}`);
+        const {l,r,ar,srch}=this.props;
+        const ui=ar.map((x,index)=>{
+            if(mid===index)
+            {
+                if(ar[mid]===srch)
+                    return(<div key={index} className="def green col-2 col-sm-2 col-md-1 align-self-center">{x}</div>);
+                else
+                    return(<div key={index} className="def red col-2 col-sm-2 col-md-1 align-self-center">{x}</div>);
+            }
             else
-            return(<div key={index} className="q">{x}</div>);
+            {
+                if(index===l)
+                return(<div key={index} className="def lblue col-2 col-sm-2 col-md-1 align-self-center">{x}</div>);
+                else if(index===r)
+                return(<div key={index} className="def lblue col-2 col-sm-2 col-md-1 align-self-center">{x}</div>);
+                else
+                return(<div key={index} className="def q col-2 col-sm-2 col-md-1 align-self-center">{x}</div>);
+            }
         });
         return (
             <center>
-            <div className="mystl">
-                {ui}
+            <div className="mystl container">
+                <div className="row">
+                    {ui}
+                </div>
             </div>
-            <button onClick={()=>this.linearSearch()}>Run</button>
             </center>
         )
     }

@@ -12,13 +12,17 @@ h1{
     background-color: rgb(202, 226, 226);
 }
 
+.lblue{
+    background-color: #8473cf;
+}
+
 .mystl{
-    margin-top: 70px;
+    margin-top: 0px;
 }
 
 .red{
     background-color: red;
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
 
 .green{
