@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import LinearParent from './linear_parent';
 import BinaryParent from './Binary_parent';
-//import {Card,CardImg,CardImgOverlay,CardText,CardBody,CardTitle} from 'reactstrap';
-
+import BubbleSort from './BubbleSort';
 class Search extends Component {
     render() {
+        return(
+            <BubbleSort />
+        )
         return (
             <div className="container">
                 <div className="row">
