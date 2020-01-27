@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/AlgoBook/static/css/main.d396fddf.chunk.css",
+    "main.js": "/AlgoBook/static/js/main.57e04fec.chunk.js",
+    "main.js.map": "/AlgoBook/static/js/main.57e04fec.chunk.js.map",
+    "runtime-main.js": "/AlgoBook/static/js/runtime-main.5b7a8584.js",
+    "runtime-main.js.map": "/AlgoBook/static/js/runtime-main.5b7a8584.js.map",
+    "static/js/2.702a4d96.chunk.js": "/AlgoBook/static/js/2.702a4d96.chunk.js",
+    "static/js/2.702a4d96.chunk.js.map": "/AlgoBook/static/js/2.702a4d96.chunk.js.map",
+    "index.html": "/AlgoBook/index.html",
+    "precache-manifest.b29b64fca57f0dd6429ed446005f65eb.js": "/AlgoBook/precache-manifest.b29b64fca57f0dd6429ed446005f65eb.js",
+    "service-worker.js": "/AlgoBook/service-worker.js",
+    "static/css/main.d396fddf.chunk.css.map": "/AlgoBook/static/css/main.d396fddf.chunk.css.map",
+    "static/js/2.702a4d96.chunk.js.LICENSE": "/AlgoBook/static/js/2.702a4d96.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b7a8584.js",
+    "static/js/2.702a4d96.chunk.js",
+    "static/css/main.d396fddf.chunk.css",
+    "static/js/main.57e04fec.chunk.js"
+  ]
+}
